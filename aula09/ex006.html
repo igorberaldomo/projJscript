@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 7</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font: normal 20pt Arial;
+        }
+    
+        h1 {
+            color: white;
+        }
+    
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> iniciando estudos <strong>DOM</strong></h1>
+    <p> aqui vai o resultado</p>
+    <p></p>
+    <p>_________window(raiz)________</p>
+    <p>_location_|_document_|_history__ </p>
+    <p>___________html_____________</p>
+    <p>______head__|__body_________</p>
+    <p>__meta__title_|_h1__p__p__div__</p>
+    <p>__________________strong_______</p>
+    <p>Aprendendo usa o <strong>DOM</strong> em javascript</p>
+    <div id= "msg"> Clique em mim</div>
+    
+    <script>
+    /* o DOM ( Document Object Model) é um modelo de documentação
+    exemplo tudo inicia no window( chamado de raiz), dentro de window entre muitos outros tem o location, o document e o history
+    dentro do document tem o html, dentro do html(parent) tem o head(child) e o body, a terminologia parent/child é para demonstrar quem está dentro de quem
+    dentro de head ele tem meta e title, enquanto dentro de body temos h1(header) dois p(paragrafos) e uma div
+    dentro do segundo paragrafo temos strong(negrito)*/
+    window.document.write("Olá mundo!</br>")
+    window.document.write(window.document.characterSet+"</br>")// imprime o set de caracteres
+    window.document.write(window.navigator.appName+"</br>") //imprime nome do app em que está sendo imprimindo
+    window.document.write(window.document.URL+"</br>") // imprime a URL 
+    var p1 = window.document.getElementsByTagName('p')[0]
+    /*pega na variavel "p1" a variavel com nome "p" que aparece na posição[n], 'n' sendo a posição da variavel, a contagem de 'n' inicia no 0 */
+    window.document.write(`O paragrafo que vai trocar de cor vai ser: `+ p1.innerText)
+    p1.style.color = 'red'
+    var d = window.document.getElementById("msg")
+    d.style.background = 'green'
+    // alem do getElement por marca"getElementsByTagName()" e por id "getElementById()", tem por nome "getElementsbyName()",
+    // o por nome da classe "getElementsbyClassName()", por seletor "querySelector() ou o plural querySelectorAll()"
+    </script>
+</body>
+</html>

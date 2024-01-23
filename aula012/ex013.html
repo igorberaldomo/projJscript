@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 14</title>
+</head>
+<body>
+    <h1>encontrar o dia da semana</h1>
+    <input type ="button" value = "que dia e hoje" onclick = "diasemana()">
+    <div id = "res"> </div>
+    <script>
+        // condição multipla é a condição que serve para conferir valores fixos onde são testados varios valores
+        // antes de voltar no fluxo normal do progama
+        /*swich(expressão){
+            case valor 1:..... break
+            case valor 2:..... break
+            case valor N:..... break
+            default: ..... break
+        }*/
+        function diasemana(){
+            var agora = new Date()
+            var diasem = agora.getDay()
+
+        switch(diasem){
+            case 0:
+            res.innerHTML ='Domingo'
+                break
+            case 1:
+            res.innerHTML = 'Segunda'
+                break
+            case 2:
+            res.innerHTML = 'Terça'
+                break
+            case 3:
+            res.innerHTML = 'Quarta'
+                break
+            case 4:
+            res.innerHTML = 'Quinta'
+                break
+            case 5:
+            res.innerHTML = 'Sexta'
+                break
+            case 6:
+            res.innerHTML = 'Sabado'
+                break
+            default:
+            res.innerHTML = "[ERRO] Dia inválido"
+                break}}
+    </script>
+</body>
+</html>

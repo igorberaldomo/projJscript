@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 4</title> 
+    <style> /* acima esta nome que aparece na aba da pagina*/
+        body {
+            background-color: rgb(165, 165, 248);
+            color: rgb(116, 53, 193);
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: crimson;
+        }
+
+        p {
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1> Testando titulo<h1>
+        <script>//acima esta o titulo principal da pagina</script>
+            <p> testo generico </p>
+            <script>//acima esta o primeiro testo da pagina</script>
+    <script>
+        var nome = window.prompt('Qual e o seu nome?')
+        /*var n1 = 1545.5
+        n1.toFixed(2) comando"tofixed(N)" para colocar quantas casas depois da virgula sendo n o numero de casas a ser considerado
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+        
+        window.alert(`a variavel n1 con duas casa depois da virgula e: ${n1}`)*/
+        document.write(`Ola,<strong> ${nome}</strong>!. seu nome tem ${nome.length} letras.<br/>`)// maneira de pegar a variavel no meio da frase + comando para achar tamanho da variavel
+        document.write(`Seu nome em maiúsculas e ${nome.toUpperCase()}<br/>`)// comando para colocar tudo em maiuscula
+        document.write(`Seu nome em minúsculas e ${nome.toLowerCase()}`)// comando para colocar tudo em minuscula
+
+    </script>
+</body>
+</html>

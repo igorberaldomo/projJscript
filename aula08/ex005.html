@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 6</title>
+    <style>
+    body {
+        background-color: black;
+        color: white;
+        font: normal 32pt Arial;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1> titulo</h1>
+    <p> texto</p>
+    <script>
+        /* OPERADORES RELACIONAIS
+        ">" significa maior que
+        "<" significa menor que
+        ">=" significa maior ou igual
+        "<=" significa menor ou igual
+        "==" significa igual
+        "!=" significa diferente
+        TODOS ELES RETORNAN TRUE(VERDADEIRO) OU FALSE(FALSO)*/
+
+        /* OPERADOR DE IDENTIDADE
+        O OPERADOR (===) TRIPLO IGUAL  SOMENTE DA TRUE SE FOR O MESMO VALOR E O MESMO TIPO
+        */
+
+        /* OPERADOR LOGICO
+        "!" significa negação
+        "&&" significa conjunção(e)
+        "||" significa disjunção(ou)*/
+
+        var media = 5.5
+        var result = media > 7? 'aprovado':'reprovado' // se a media for maior que 7 ele vai responder aprovado se for menor reprovado
+        document.write(`${result}<br/>`)
+        var x = 8
+        var res = x %2 ==0? 5:9 // a variavel res vai receber ou 5 ou 9 se for verdadeiro res recebe 5 se for falso ele recebe 9
+        document.write(`${res}<br/>`)
+
+        
+    </script>
+    
+</body>
+</html>
